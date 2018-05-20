@@ -1,0 +1,325 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
+html,
+body {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 23px; }
+
+.section {
+  display: block; }
+
+.line-left {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px; }
+  .line-left:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #f1b05e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px; }
+
+.social-icon .social-list-item {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0; }
+  .social-icon .social-list-item .social-item {
+    display: inline-block;
+    margin-right: 15px; }
+    .social-icon .social-list-item .social-item a {
+      list-style: none;
+      text-decoration: none;
+      color: white; }
+
+.yellow-btn {
+  background-color: #f1b05e;
+  padding: 10px 40px;
+  color: white;
+  border: none;
+  cursor: pointer; }
+  .yellow-btn:hover {
+    background-color: #da9c51; }
+  .yellow-btn:active {
+    background-color: #ffc47b; }
+  .yellow-btn:focus {
+    border: none;
+    box-shadow: none;
+    outline: none; }
+
+.float-left {
+  float: left; }
+
+.reset-float:after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.width-50 {
+  width: 50%; }
+
+.resume-color h3 {
+  color: white;
+  font-size: 22px; }
+.resume-color h4 {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px; }
+.resume-color p {
+  color: white;
+  opacity: 0.9;
+  font-size: 14px;
+  margin: 0; }
+.resume-color i {
+  color: white; }
+.resume-color .list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+  .resume-color .list .item {
+    line-height: 1;
+    margin-bottom: 30px; }
+
+.resume-line {
+  width: 100%; }
+  .resume-line .line-left {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    position: relative;
+    margin-bottom: 30px; }
+    .resume-line .line-left:after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #f1b05e;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80px; }
+
+.resume-icon i {
+  font-size: 30px;
+  color: white; }
+
+.skill-color h4 {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px; }
+
+.skill-line {
+  width: 100%; }
+  .skill-line .skill-line-left {
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    margin-bottom: 20px; }
+    .skill-line .skill-line-left i {
+      display: block;
+      height: 4px;
+      background-color: #f1b05e;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0; }
+
+.skill-list {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  list-style: none; }
+
+.skill-percent {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  top: 17px; }
+  .skill-percent h5 {
+    float: right;
+    color: white;
+    line-height: 1;
+    font-size: 12px;
+    margin: 0; }
+
+.menu-content {
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 99;
+  background-color: black; }
+  .menu-content .menu-horizontal {
+    width: 1200px;
+    margin: 0 auto;
+    height: 70px; }
+  .menu-content .menu-horizontal:after {
+    content: '';
+    clear: both;
+    display: block; }
+  .menu-content .menu-horizontal .logo img {
+    display: block;
+    width: 70px;
+    float: left;
+    margin-top: 0px; }
+  .menu-content .menu-horizontal .navigation {
+    float: right;
+    display: inline-block;
+    padding-top: 9px; }
+    .menu-content .menu-horizontal .navigation .list-item {
+      display: inline-block;
+      margin-right: 40px;
+      text-transform: uppercase;
+      list-style: none; }
+      .menu-content .menu-horizontal .navigation .list-item .item {
+        display: inline-block;
+        margin: 15px;
+        margin-top: 0; }
+      .menu-content .menu-horizontal .navigation .list-item .item a {
+        text-decoration: none;
+        color: ghostwhite;
+        font-size: 14px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+.slider {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: block; }
+  .slider img {
+    min-height: 100%;
+    position: relative;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%); }
+  .slider .content {
+    z-index: 11;
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    transform: translateY(-50%);
+    top: 50%;
+    line-height: 40px; }
+    .slider .content h1 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 60px; }
+    .slider .content h2 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 40px; }
+  .slider .background {
+    background-color: black;
+    opacity: 0.5;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+
+.intro {
+  width: 100%;
+  background-color: #131414;
+  display: block;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .intro .intro-wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; }
+    .intro .intro-wrap .intro-photo {
+      width: 40%;
+      float: left;
+      position: relative; }
+      .intro .intro-wrap .intro-photo .shadow {
+        background-color: peru;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 200ms ease-in-out; }
+      .intro .intro-wrap .intro-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: all 200ms ease-in-out; }
+      .intro .intro-wrap .intro-photo:hover .shadow {
+        top: -10px;
+        left: -10px; }
+      .intro .intro-wrap .intro-photo:hover img {
+        top: 10px;
+        left: 10px; }
+    .intro .intro-wrap .intro-content {
+      float: left;
+      width: 60%; }
+      .intro .intro-wrap .intro-content h1 {
+        color: white;
+        margin: 0;
+        margin-bottom: 15px;
+        padding: 0;
+        font-family: 'Josefin Sans', sans-serif; }
+      .intro .intro-wrap .intro-content p {
+        color: white;
+        margin: 0;
+        margin-bottom: 15px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 24px; }
+      .intro .intro-wrap .intro-content > .content {
+        padding-left: 60px; }
+    .intro .intro-wrap:after {
+      content: '';
+      display: block;
+      clear: both; }
+
+.resume {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: black;
+  background-image: url(../img/b4.jpg);
+  background-attachment: fixed;
+  padding: 50px 0; }
+  .resume .background-color {
+    background-color: black;
+    opacity: 0.7;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+  .resume .resume-wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; }
+    .resume .resume-wrap .resume-content {
+      position: relative;
+      z-index: 1; }
+
+.my-service {
+  display: block;
+  width: 100%;
+  background-color: #131414;
+  position: relative; }
+
+/*# sourceMappingURL=index.css.map */
