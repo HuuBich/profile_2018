@@ -8,7 +8,7 @@
         content: '';
         display: block;
         height: 1px;
-        background-color: #f1b05e;
+        background-color: $color-yellow;
         position: absolute;
         top: 0;
         left: 0;
@@ -35,7 +35,7 @@
 }
 
 .yellow-btn {
-    background-color: #f1b05e;
+    background-color: $color-yellow;
     padding: 10px 40px;
     color: white;
     border: none;
@@ -112,7 +112,7 @@
             content: '';
             display: block;
             height: 1px;
-            background-color: #f1b05e;
+            background-color: $color-yellow;
             position: absolute;
             top: 0;
             left: 0;
@@ -124,7 +124,7 @@
 .resume-icon {
     i {
         font-size: 30px;
-        color: white;
+        color: #da9c51;
     }
 }
 
@@ -147,7 +147,7 @@
         i {
             display: block;
             height: 4px;
-            background-color: #f1b05e;
+            background-color: $color-yellow;
             position: absolute;
             top: 0;
             left: 0;
@@ -174,5 +174,129 @@
         line-height: 1;
         font-size: 12px;
         margin: 0;
+    }
+}
+
+.quote-title {
+    margin-bottom: 30px;
+    i {
+        font-size: 30px;
+    }
+}
+
+.yellow-btn {
+    background-color: $color-yellow;
+    padding: 10px 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: #da9c51;
+    }
+    &:active {
+        background-color: #ffc47b;
+    }
+    &:focus {
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.margin-center {
+    margin: 0 auto;
+    display: block;
+}
+
+.background-contact {
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.style-line-center {
+    height: 1px;
+    background-color: rgba($color: white, $alpha: 0.2);
+    width: 25%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 25px;
+    &:after {
+        content: '';
+        display: block;
+        height: 2px;
+        background-color: $color-yellow;
+        position: absolute;
+        top: -1px;
+        left: 50%;
+        width: 80px;
+        transform: translate(-50%);
+    }
+}
+
+.form-wrap {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.float-col3 {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .float-col {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+.float-col2 {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .float-col {
+        float: left;
+        width: 50%;
+        h4 {
+            display: block;
+            margin: 0;
+        }
+    }
+}
+
+.float-col4 {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .float-col {
+        float: left;
+        width: 25%;
+        h4 {
+            display: block;
+            margin: 0;
+        }
+    }
+}
+
+.main-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
     }
 }

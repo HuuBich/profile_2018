@@ -1,0 +1,37 @@
+.my-portfolio {
+    display: block;
+    background-color: #131414;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 50px 0;
+    .portfolio-wrap {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        .portfolio-content {
+            margin: 0 auto;
+            .categories-wrap {
+                margin-bottom: 15px;
+                &:after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+                .categories-list {
+                    float: left;
+                    width: 33.33%;
+                    .categories-item {
+                        padding: 15px;
+                        img {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
