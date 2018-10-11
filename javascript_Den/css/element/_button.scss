@@ -1,0 +1,38 @@
+%button {
+    min-width: 150px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.yellow-button {
+    &.center-el {
+        margin: 0 auto;
+    }
+    display: block; //
+    @extend %button;
+    background-color: orange;
+    color: white;
+    border: none;
+    @media screen and(max-width: 512px) {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    &:hover {
+        background-color: rgb(248, 211, 142);
+    }
+}
+
+.yellow-line-button {
+    @extend %button;
+    color: orange;
+    border: 1px solid orange;
+    background: transparent;
+    display: block;
+    @media screen and(max-width: 512px) {
+        width: 100%;
+    }
+    &:hover {
+        background-color: orange;
+        color: white;
+    }
+}

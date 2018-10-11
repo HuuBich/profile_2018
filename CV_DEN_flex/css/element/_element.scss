@@ -1,0 +1,131 @@
+.center {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.desktop-size {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.main-title {
+    font-size: 32px;
+    color: white;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+    h3 {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .content {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 15px;
+    }
+}
+
+// .title {
+//     font-size: 30px;
+//     font-family: Arial, Helvetica, sans-serif;
+//     font-weight: bold;
+//     margin-bottom: 15px;
+// }
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: rgba($color: white, $alpha: 0.5);
+    margin: 0 auto;
+    display: block;
+    position: relative;
+
+    &:after {
+        height: 3px;
+        background-color: orange;
+        width: 100px;
+        margin: 0 auto;
+        content: '';
+        display: block;
+        position: absolute;
+        top: -1px;
+        left: 0;
+    }
+}
+
+.title-line {
+    height: 1px;
+    width: 20%;
+    background-color: rgba($color: white, $alpha: 0.5);
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    z-index: 3;
+
+    &:after {
+        height: 3px;
+        background-color: orange;
+        width: 100px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.line-resume {
+    height: 1px;
+    width: 75%;
+    background-color: rgba($color: white, $alpha: 0.5);
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+
+    &:after {
+        height: 3px;
+        background-color: orange;
+        width: 100px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: -1px;
+        left: 0;
+    }
+}
+
+i {
+    color: orange;
+}
+
+.ul-reset {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hide-mobile {
+    @media screen and (max-width: 512px) {
+        display: none !important;
+    }
+}
+
+.show-mobile {
+    display: none;
+
+    @media screen and (max-width: 512px) {
+        display: block !important;
+    }
+}

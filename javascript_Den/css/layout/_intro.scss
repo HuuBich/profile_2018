@@ -1,0 +1,93 @@
+.intro {
+    background-color: black;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media screen and (max-width: 512px) {
+        padding-top: 0;
+    }
+
+    .intro-wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            display: block;
+            transition: all 0.5s ease-out;
+            top: 0;
+            left: 0;
+        }
+
+        .line {
+            margin-bottom: 40px;
+        }
+
+        .flex-3 {
+            @media screen and (max-width: 512px) {
+                padding: 20px;
+            }
+        }
+
+        .flex-2 {
+            margin-right: 30px;
+
+            @media screen and (max-width: 512px) {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+
+        .img-wrap {
+            position: relative;
+
+            &:hover {
+                img {
+                    left: 10px;
+
+                    @media screen and (max-width: 512px) {
+                        left: 0;
+                    }
+                }
+
+                .shadow {
+                    left: -10px;
+                    top: -20px;
+
+                    @media screen and (max-width: 512px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .social-media {
+        margin-bottom: 20px;
+
+        .icon {
+            border: 1px solid white;
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+        }
+    }
+
+    .shadow {
+        background-color: peru;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease-out;
+    }
+
+    button {
+        margin-right: 10px;
+    }
+}
